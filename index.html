@@ -15,6 +15,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <script src="https://kit.fontawesome.com/b8e20a3bf8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -22,19 +24,23 @@
     <h1 class="text-center "><span class="text-info">Dream park</span></h1>
   </header>
   <main class="main">
-    <div class="search-field">
-      <div class="search-box">
+    <!-- <div class="search-field"> -->
+    <!-- <div class="search-box">
         <input id="input-field" class="search-field" type="text" />
         <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
           autocomplete="off" id="search-btn" onclick="loadProducts()">
           Search
         </button>
-      </div>
+      </div> -->
+    <div class="container text-center my-5 ">
+      <input class="p-1 pb-2 w-25" type="text" name="" id="input-field" placeholder="Search your product's">
+      <button class="btn btn-secondary p-2" id="search-btn" onclick="loadProducts()" type="button">Search</button>
     </div>
-    <div class="row">
+
+    <!-- </div> -->
+    <div class="row m-2">
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products" class="">
-          <h1></h1>
         </div>
       </div>
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
@@ -82,7 +88,7 @@
             </tbody>
           </table>
           <div class="parces text-center">
-            <button class="btn btn-primary text-center">Buy Now</button>
+            <button class="btn btn-success text-center">Buy Now</button>
           </div>
         </div>
       </div>
